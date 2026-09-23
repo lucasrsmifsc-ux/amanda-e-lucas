@@ -66,9 +66,8 @@
   .brilho {
     position: absolute; inset: -35%;
     background:
-      radial-gradient(38% 30% at 34% 30%, rgba(163,90,102,.34), rgba(163,90,102,0) 70%),
-      radial-gradient(30% 26% at 70% 72%, rgba(140,62,76,.22), rgba(140,62,76,0) 70%);
-    mix-blend-mode: soft-light;
+      radial-gradient(38% 30% at 34% 30%, rgba(126,0,0,.047), rgba(126,0,0,0) 70%),
+      radial-gradient(30% 26% at 70% 72%, rgba(24,0,0,.056), rgba(24,0,0,0) 70%);
     animation: brilho 24s ease-in-out infinite alternate;
   }
   @keyframes brilho {
@@ -83,9 +82,8 @@
     position: fixed; inset: 0; z-index: 40; overflow: hidden;
     color: var(--renda);
     background:
-      url(assets/veludo-fibra.jpg) 0 0 / 340px repeat,
-      #595E2E url(assets/veludo-brilho-retrato.jpg) center / cover no-repeat;
-    background-blend-mode: overlay, normal;
+      url(assets/veludo-luz-retrato.webp) center / cover no-repeat,
+      #595E2E url(assets/veludo-fibra-musgo.jpg) 0 0 / 340px repeat;
   }
   html:not(.carta-fechada):not(.carta-saindo) .carta { display: none; }
   .carta::after {
@@ -105,17 +103,15 @@
   .aba-face {
     background:
       linear-gradient(180deg, rgba(255,255,235,.06), rgba(0,0,0,0) 60%),
-      url(assets/veludo-fibra.jpg) 170px 90px / 340px repeat,
-      #565B2D url(assets/veludo-brilho-paisagem.jpg) 30% 20% / 180vmax 180vmax no-repeat;
-    background-blend-mode: normal, overlay, normal;
+      url(assets/veludo-luz-paisagem.webp) 30% 20% / 180vmax 180vmax no-repeat,
+      #565B2D url(assets/veludo-fibra-musgo.jpg) 170px 90px / 340px repeat;
   }
   .aba-verso {
     opacity: 0;
     background:
       linear-gradient(rgba(255,255,235,.08), rgba(255,255,235,.08)),
-      url(assets/veludo-fibra.jpg) 0 0 / 340px repeat,
-      #6C7139 url(assets/veludo-brilho-paisagem.jpg) 70% 80% / 180vmax 180vmax no-repeat;
-    background-blend-mode: normal, overlay, normal;
+      url(assets/veludo-luz-paisagem.webp) 70% 80% / 180vmax 180vmax no-repeat,
+      #6C7139 url(assets/veludo-fibra-musgo.jpg) 0 0 / 340px repeat;
   }
   .carta-renda { position: absolute; inset: 0; width: 100%; height: 100%; overflow: visible; filter: drop-shadow(0 1.5px 1.5px rgba(10,12,2,.55)); }
   .carta-textos {
@@ -132,7 +128,7 @@
     text-shadow: 0 2px 10px rgba(12,14,2,.35);
   }
   @media (orientation: landscape) {
-    .carta { background-image: url(assets/veludo-fibra.jpg), url(assets/veludo-brilho-paisagem.jpg); }
+    .carta { background-image: url(assets/veludo-luz-paisagem.webp), url(assets/veludo-fibra-musgo.jpg); }
   }
   .carta-selo {
     position: absolute; z-index: 4; left: 50%; top: var(--y-ponta);
@@ -203,9 +199,8 @@
   }
   .cartao-papel {
     position: absolute; inset: 0; border-radius: .6cqw;
-    background-image: url(assets/papel.jpg), radial-gradient(120% 90% at 50% 42%, var(--papel) 55%, var(--papel-borda) 100%);
+    background-image: url(assets/papel-sombra.webp), radial-gradient(120% 90% at 50% 42%, var(--papel) 55%, var(--papel-borda) 100%);
     background-size: 256px auto, 100% 100%;
-    background-blend-mode: multiply;
   }
   .moldura { position: absolute; inset: 0; width: 100%; height: 100%; color: var(--musgo); }
   .cartao-conteudo {
@@ -299,9 +294,8 @@
     padding: 3.2rem 2rem 2.9rem;
     display: grid; justify-items: center; gap: 1.6rem;
     text-align: center; color: var(--bordo);
-    background-image: url(assets/papel.jpg), radial-gradient(130% 100% at 50% 40%, var(--papel) 60%, var(--papel-borda));
+    background-image: url(assets/papel-sombra.webp), radial-gradient(130% 100% at 50% 40%, var(--papel) 60%, var(--papel-borda));
     background-size: 256px auto, 100% 100%;
-    background-blend-mode: multiply;
     -webkit-mask:
       radial-gradient(circle var(--n) at 0 0, #0000 98%, #000) 0 0 / 51% 51% no-repeat,
       radial-gradient(circle var(--n) at 100% 0, #0000 98%, #000) 100% 0 / 51% 51% no-repeat,
@@ -382,9 +376,8 @@
     padding: 3.1rem 2.1rem 2.8rem;
     display: grid; justify-items: center; gap: .9rem;
     text-align: center; color: var(--bordo);
-    background-image: url(assets/papel.jpg), radial-gradient(130% 100% at 50% 40%, var(--papel) 60%, var(--papel-borda));
+    background-image: url(assets/papel-sombra.webp), radial-gradient(130% 100% at 50% 40%, var(--papel) 60%, var(--papel-borda));
     background-size: 256px auto, 100% 100%;
-    background-blend-mode: multiply;
     -webkit-mask:
       linear-gradient(#000 0 0) center / calc(100% - 2 * var(--r)) calc(100% - 2 * var(--r)) no-repeat,
       radial-gradient(farthest-side, #000 97%, #0000) 0 0 / calc(2 * var(--r)) calc(2 * var(--r)) round;

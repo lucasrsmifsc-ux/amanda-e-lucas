@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Save the Date//Casamento//PT-BR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:casamento-20270313-villa-atryum@save-the-date
+DTSTAMP:20260923T150000Z
+DTSTART:20270313T190000Z
+DTEND:20270314T020000Z
+SUMMARY:Casamento de Amanda & Lucas
+LOCATION:Villa Atryum\, Pomerode - SC
+DESCRIPTION:Save the date! Cerimônia às 16h na Villa Atryum\, em Pomerode (SC). O convite formal chega em breve.
+BEGIN:VALARM
+TRIGGER:-P7D
+ACTION:DISPLAY
+DESCRIPTION:Casamento em uma semana
+END:VALARM
+END:VEVENT
+END:VCALENDAR

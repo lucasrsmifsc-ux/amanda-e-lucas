@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Amanda e Lucas//Manual dos Padrinhos//PT-BR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:padrinhos-20270313@amandaelucas.com
+DTSTAMP:20261116T120000Z
+DTSTART:20270313T183000Z
+DTEND:20270314T020000Z
+SUMMARY:Casamento de Amanda & Lucas · padrinhos
+LOCATION:Villa Atryum\, Pomerode - SC
+DESCRIPTION:Chegada dos padrinhos às 15h30. Cerimônia religiosa e civil às 16h\, ao ar livre\, na Villa Atryum\, em Pomerode (SC). Traje: black tie.
+BEGIN:VALARM
+TRIGGER:-P1D
+ACTION:DISPLAY
+DESCRIPTION:Amanhã é o casamento de Amanda & Lucas. Chegada dos padrinhos às 15h30.
+END:VALARM
+END:VEVENT
+END:VCALENDAR
